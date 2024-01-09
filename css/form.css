@@ -361,5 +361,43 @@
     width: 100%;
     display: flex;
 }
-.input__img {
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.interests__item {
+    margin-top: 20px;
+    display: flex;
+    padding: 15px 24px;
+    border: 1px solid #E5E4E1;
+    background: #FFF;
+    cursor: pointer;
+    position: relative;
+}
+.interests__item input {
+    display: none;
+}
+.interests__checkbox:checked ~ .interests__text {
+    color: blue;
+}
+.interests__checkbox:checked ~ .interests__border {
+    opacity: 1;
+}
+.interests__text {
+    color: #747887;
+    font-family: Author;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 494;
+    line-height: normal;
+}
+.interests__border{
+    position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   border: 1px solid blue;
+    opacity: 0;
 }
